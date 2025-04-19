@@ -114,7 +114,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className=" active:to-bjj-blue block text-sm font-medium text-gray-700 mb-1">
                     Mensagem (opcional)
                   </label>
                   <Textarea
@@ -128,7 +128,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" className="w-full btn-primary">
+                <Button type="submit" className="w-full btn-primary bg-bjj-blue hover:bg-bjj-darkblue text-white">
                   Enviar Solicitação
                 </Button>
               </div>
