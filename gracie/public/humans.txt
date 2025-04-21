@@ -1,0 +1,20 @@
+/* team */
+
+Developer: rafael
+GitHub: https://github.com/rafaelromwno
+Location: Matão, Brasil
+
+/* site */
+
+Last update: 2025-04-09
+Standards: HTML5, CSS3, TypeScript, TailwindCSS
+Components: React
+Software: Visual Studio Code
+
+/* thanks */
+
+thanks to: comunity open source, family and friends
+
+/* contact */
+
+email: romanosilvarafael@gmail.com
