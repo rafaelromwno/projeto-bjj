@@ -26,7 +26,7 @@ const programs = [
   },
   {
     title: "Avançado & Competição",
-    description: "Treinamento intensivo para faixas azuis e acima, com técnicas avançadas e preparação física e mental para competições de alto nível.",
+    description: "Treinamento intensivo para faixas azuis e acima, preparação física e mental para competições de alto nível. Aulas dinâmicas focadas em desempenho técnico, estratégia de luta e resistência sob pressão.",
     image: CompetitionProgram,
     details: [
       { label: "Nível", value: "Intermediário/Avançado" },
@@ -72,7 +72,19 @@ const Programs = () => {
               </div>
               <div className="p-6 pt-0">
                 <a href="#contact" className="w-full inline-block">
-                  <Button className="w-full bg-bjj-blue text-white hover:bg-bjj-blue/90">Saiba Mais</Button>
+                  <Button 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector('#contact');
+                    if (target) {
+                      target.scrollIntoView({ behavior: 'smooth' });
+                      history.pushState(null, '', '#contact');
+                    }
+                  }}
+                  className="w-full bg-bjj-blue text-white hover:bg-bjj-blue/90"
+                  >
+                    Saiba Mais
+                  </Button>
                 </a>
               </div>
             </div>
@@ -81,10 +93,19 @@ const Programs = () => {
 
         <div className="mt-16 text-center">
           <p className="text-gray-700 mb-6">
-            Além dos programas principais, também oferecemos aulas especializadas de No-Gi, Women's Only e Self-Defense.
+            Além dos programas principais, também oferecemos aulas especializadas de No-Gi, Apenas mulheres (Women's Only) e Defesa Pessoal.
           </p>
           <a href="#contact" className="inline-block">
-            <Button className="btn-secondary">Ver Horário Completo</Button>
+            <Button 
+            onClick={(e) => {
+              e.preventDefault();
+              const target = document.querySelector('#contact');
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+                history.pushState(null, '', '#contact');
+              }
+            }}
+            className="btn-secondary bg-bjj-darkblue hover:bg-bjj-lightblue duration-500">Ver Horário Completo</Button>
           </a>
         </div>
       </div>
