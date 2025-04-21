@@ -53,7 +53,7 @@ const About = () => {
         <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
             <img 
-              src="src/assets/nossa-historia.png" 
+              src="../assets/nossa-historia.png" 
               alt="Academia de Jiu-Jitsu"
               className="rounded-lg shadow-xl object-cover w-full h-96"
             />

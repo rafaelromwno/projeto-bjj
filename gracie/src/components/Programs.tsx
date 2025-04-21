@@ -4,7 +4,7 @@ const programs = [
   {
     title: "Jiu-Jitsu Kids",
     description: "Programa desenvolvido especialmente para crianças de 5 a 12 anos, focando em coordenação motora, disciplina, respeito e defesa pessoal de forma lúdica e segura.",
-    image: "src/assets/kids-program.jpg",
+    image: "../assets/kids-program.jpg",
     details: [
       { label: "Idade", value: "5-12 anos" },
       { label: "Duração", value: "45 minutos" },
@@ -14,7 +14,7 @@ const programs = [
   {
     title: "Fundamentos",
     description: "Curso completo para adultos iniciantes no Jiu-Jitsu, com foco em técnicas fundamentais, condicionamento físico e princípios básicos de defesa pessoal.",
-    image: "src/assets/fundamentals-program.jpg",
+    image: "../assets/fundamentals-program.jpg",
     details: [
       { label: "Idade", value: "13+ anos" },
       { label: "Duração", value: "60 minutos" },
@@ -24,7 +24,7 @@ const programs = [
   {
     title: "Avançado & Competição",
     description: "Treinamento intensivo para faixas azuis e acima, com técnicas avançadas e preparação física e mental para competições de alto nível.",
-    image: "src/assets/competition-program.jpg",
+    image: "../assets/competition-program.jpg",
     details: [
       { label: "Nível", value: "Intermediário/Avançado" },
       { label: "Duração", value: "90 minutos" },
