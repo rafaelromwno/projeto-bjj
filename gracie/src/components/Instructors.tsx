@@ -1,4 +1,3 @@
-import React from 'react';
 import { Instagram, Globe } from 'lucide-react';
 
 const instructors = [
