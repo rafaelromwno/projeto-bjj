@@ -1,4 +1,5 @@
 import { Award, Shield, Users } from 'lucide-react';
+import NossaHistoria from '../../public/nossa-historia.png';
 
 const About = () => {
   return (
@@ -53,7 +54,7 @@ const About = () => {
         <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
             <img 
-              src="../assets/nossa-historia.png" 
+              src={NossaHistoria}
               alt="Academia de Jiu-Jitsu"
               className="rounded-lg shadow-xl object-cover w-full h-96"
             />
