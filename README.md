@@ -1,6 +1,6 @@
 🥋 GracieBjj - Projeto de Estudo com Foco em Jiu-Jitsu Brasileiro
 =================================================================
-👉 [Acesse o site aqui](https://seuprojeto.vercel.app)
+👉 [Acesse o site aqui](https://graciebjj.vercel.app/)
 
 📌 Descrição
 ------------
