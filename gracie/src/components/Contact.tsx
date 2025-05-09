@@ -161,7 +161,7 @@ const Contact = () => {
                 <Mail className="mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-bold mb-1">Email</h4>
-                  <p>contato@graciebarra.com.br</p>
+                  <p>contato@graciebjj.com.br</p>
                 </div>
               </div>
 
