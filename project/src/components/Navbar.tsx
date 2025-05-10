@@ -30,11 +30,8 @@ const Navbar = () => {
       aria-label="Navegação principal"
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center ml-3">
           <a href="#" className="flex items-center" aria-label="Página inicial">
-            <div className="w-10 h-10 rounded-full bg-bjj-lightblue flex items-center justify-center mr-2" aria-hidden="true">
-              <span className="text-gracie-white font-bold text-xs">CB</span>
-            </div>
             <span className="text-gracie-red font-bold text-2xl">CLEAN<span className="text-bjj-lightblue">BJJ</span></span>
           </a>
 
