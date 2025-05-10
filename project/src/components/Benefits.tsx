@@ -29,22 +29,34 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-20 bg-gray-50">
+    <section id="benefits" className="py-20 bg-gray-50" aria-labelledby="benefits-heading">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-title">Benefícios do Jiu-Jitsu</h2>
+          <h2 id="benefits-heading" className="section-title">Benefícios do Jiu-Jitsu</h2>
           <p className="section-subtitle">
             Descubra como o Jiu-Jitsu pode transformar sua vida física e mentalmente.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center">
-              <CheckCircle className="text-bjj-blue w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-bjj-blue mb-2">{benefit.title}</h3>
+          {benefits.map((benefit) => (
+            <article
+              key={benefit.title}
+              className="bg-white rounded-lg shadow-md p-6 text-center"
+              aria-labelledby={`benefit-${benefit.title.replace(/\s+/g, '-').toLowerCase()}`}
+            >
+              <CheckCircle
+                className="text-bjj-blue w-12 h-12 mx-auto mb-4"
+                aria-hidden="true"
+              />
+              <h3
+                id={`benefit-${benefit.title.replace(/\s+/g, '-').toLowerCase()}`}
+                className="text-xl font-bold text-bjj-blue mb-2"
+              >
+                {benefit.title}
+              </h3>
               <p className="text-gray-600">{benefit.description}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

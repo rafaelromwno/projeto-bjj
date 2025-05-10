@@ -52,10 +52,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="section-title">Entre em Contato</h2>
+          <h2 id="contact-heading" className="section-title">Entre em Contato</h2>
           <p className="section-subtitle">
             Agende sua aula experimental gratuita ou tire suas dúvidas sobre nossos programas.
           </p>
@@ -64,8 +64,11 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 mb-8 gap-12 items-stretch">
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-md h-full">
-            <h3 className="text-2xl font-bold mb-4 text-gracie-red">Agende Sua Aula Gratuita</h3>
-            <form onSubmit={handleSubmit}>
+            <h3 className="text-2xl font-bold mb-4 text-gracie-red" id="form-heading">Agende Sua Aula Gratuita</h3>
+            <form onSubmit={handleSubmit} aria-labelledby="form-heading" aria-describedby="form-desc">
+              <p id="form-desc" className="sr-only">
+                Preencha o formulário abaixo para agendar sua aula gratuita.
+              </p>
               <div className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -114,7 +117,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className=" active:to-bjj-blue block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                     Mensagem (opcional)
                   </label>
                   <Textarea
@@ -128,7 +131,10 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" className="w-full btn-primary bg-bjj-blue hover:bg-bjj-darkblue text-white">
+                <Button
+                  type="submit"
+                  className="w-full btn-primary bg-bjj-blue hover:bg-bjj-darkblue text-white"
+                >
                   Enviar Solicitação
                 </Button>
               </div>
@@ -141,16 +147,16 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <MapPin className="mr-4 flex-shrink-0" />
-              <div>
-                <h4 className="font-bold mb-1">Endereço</h4>
-                <p>Rua Exemplo, 123 - Centro</p>
-                <p>Cidade - Estado, 00000-000</p>
-              </div>
+                <MapPin className="mr-4 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h4 className="font-bold mb-1">Endereço</h4>
+                  <p>Rua Exemplo, 123 - Centro</p>
+                  <p>Cidade - Estado, 00000-000</p>
+                </div>
               </div>
 
               <div className="flex items-start">
-                <Phone className="mr-4 flex-shrink-0" />
+                <Phone className="mr-4 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="font-bold mb-1">Telefone</h4>
                   <p>(11) 99999-9999</p>
@@ -158,7 +164,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start">
-                <Mail className="mr-4 flex-shrink-0" />
+                <Mail className="mr-4 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="font-bold mb-1">Email</h4>
                   <p>contato@cleanbjj.com.br</p>
@@ -166,7 +172,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start">
-                <Clock className="mr-4 flex-shrink-0" />
+                <Clock className="mr-4 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="font-bold mb-1">Horário de Funcionamento</h4>
                   <p>Segunda a Sexta: 6h às 22h</p>
@@ -178,14 +184,14 @@ const Contact = () => {
             <div className="mt-8">
               <h4 className="font-bold mb-3">Siga-nos</h4>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-gracie-red transition-colors">
-                  <Instagram size={24} />
+                <a href="#" aria-label="Instagram da academia" className="hover:text-gracie-red transition-colors">
+                  <Instagram size={24} aria-hidden="true" />
                 </a>
-                <a href="#" className="hover:text-gracie-red transition-colors">
-                  <Facebook size={24} />
+                <a href="#" aria-label="Facebook da academia" className="hover:text-gracie-red transition-colors">
+                  <Facebook size={24} aria-hidden="true" />
                 </a>
-                <a href="#" className="hover:text-gracie-red transition-colors">
-                  <Youtube size={24} />
+                <a href="#" aria-label="Youtube da academia" className="hover:text-gracie-red transition-colors">
+                  <Youtube size={24} aria-hidden="true" />
                 </a>
               </div>
             </div>

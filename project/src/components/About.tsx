@@ -3,59 +3,59 @@ import NossaHistoria from '../../public/nossa-historia.png';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white" aria-labelledby="about-heading">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="section-title">Sobre Nossa Academia</h2>
+        <header className="text-center mb-16">
+          <h2 id="about-heading" className="section-title">Sobre Nossa Academia</h2>
           <p className="section-subtitle">
             Fundada com a missão de ensinar a verdadeira arte do Jiu-Jitsu Brasileiro, promovemos
             valores de respeito, disciplina e crescimento pessoal.
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Values Card 1 */}
-          <div className="bg-white p-8 rounded-lg shadow-md text-center card-hover">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-bjj-blue/10 mb-6">
-              <Award size={32} className="text-bjj-blue" />
+          <article className="bg-white p-8 rounded-lg shadow-md text-center card-hover" aria-labelledby="card-technique">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-bjj-blue/10 mb-6" aria-hidden="true">
+              <Award size={32} className="text-bjj-blue" aria-hidden="true" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-bjj-blue">Excelência Técnica</h3>
+            <h3 id="card-technique" className="text-xl font-bold mb-4 text-bjj-blue">Excelência Técnica</h3>
             <p className="text-gray-600">
               Nossos instrutores certificados ensinam técnicas refinadas e testadas em competições
               para garantir seu desenvolvimento e progresso constante.
             </p>
-          </div>
+          </article>
 
           {/* Values Card 2 */}
-          <div className="bg-white p-8 rounded-lg shadow-md text-center card-hover">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-bjj-blue/10 mb-6">
-              <Shield size={32} className="text-bjj-blue" />
+          <article className="bg-white p-8 rounded-lg shadow-md text-center card-hover" aria-labelledby="card-tradition">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-bjj-blue/10 mb-6" aria-hidden="true">
+              <Shield size={32} className="text-bjj-blue" aria-hidden="true" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-bjj-blue">Tradição e Respeito</h3>
+            <h3 id="card-tradition" className="text-xl font-bold mb-4 text-bjj-blue">Tradição e Respeito</h3>
             <p className="text-gray-600">
               Mantemos os valores tradicionais do Jiu-Jitsu, onde o respeito pelos mestres e 
               colegas é tão importante quanto o desenvolvimento das habilidades técnicas.
             </p>
-          </div>
+          </article>
 
           {/* Values Card 3 */}
-          <div className="bg-white p-8 rounded-lg shadow-md text-center card-hover">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-bjj-blue/10 mb-6">
-              <Users size={32} className="text-bjj-blue" />
+          <article className="bg-white p-8 rounded-lg shadow-md text-center card-hover" aria-labelledby="card-community">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-bjj-blue/10 mb-6" aria-hidden="true">
+              <Users size={32} className="text-bjj-blue" aria-hidden="true" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-bjj-blue">Comunidade Forte</h3>
+            <h3 id="card-community" className="text-xl font-bold mb-4 text-bjj-blue">Comunidade Forte</h3>
             <p className="text-gray-600">
               Criar uma comunidade inclusiva onde praticantes de todos os níveis podem crescer juntos,
               apoiando uns aos outros dentro e fora do tatame.
             </p>
-          </div>
+          </article>
         </div>
 
         <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
             <img 
               src={NossaHistoria}
-              alt="Academia de Jiu-Jitsu"
+              alt="Foto da academia de Jiu-Jitsu durante um treino"
               className="rounded-lg shadow-xl object-cover w-full h-96"
             />
           </div>

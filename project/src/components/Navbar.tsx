@@ -32,23 +32,23 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center ml-3">
           
-        <a href="#" className="flex items-center" aria-label="Página inicial">
-          <img 
-            src="/logotipo.svg" 
-            alt="Logo" 
-            className={`h-10 transition-all duration-300 ${isScrolled ? 'filter-blue' : 'filter-white'}`} 
-          />
-        </a>
+          <a href="#" className="flex items-center" aria-label="Página inicial">
+            <img 
+              src="/logotipo.svg" 
+              alt="Logo" 
+              className={`h-10 transition-all duration-300 ${isScrolled ? 'filter-blue' : 'filter-white'}`} 
+            />
+          </a>
 
           {/* Desktop menu */}
           {!isMobile && (
-          <div className="flex items-center space-x-8" role="navigation" aria-label="Menu principal">
-            <a href="#about" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Sobre</a>
-            <a href="#programs" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Programas</a>
-            <a href="#instructors" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Instrutores</a>
-            <a href="#testimonials" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Depoimentos</a>
-            <a href="#contact" className={`duration-500 btn-primary transition-colors ${isScrolled ? 'bg-bjj-blue text-white' : 'bg-transparent border-2 border-gracie-white text-gracie-white hover:bg-gracie-white hover:text-bjj-darkblue'}`}>Aula Gratuita</a>
-          </div>
+            <div className="flex items-center space-x-8" role="navigation" aria-label="Menu principal">
+              <a href="#about" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Sobre</a>
+              <a href="#programs" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Programas</a>
+              <a href="#instructors" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Instrutores</a>
+              <a href="#testimonials" className={`duration-500 transition-colors ${isScrolled ? 'hover:text-bjj-red text-bjj-darkblue' : 'text-white hover:text-red-400'}`}>Depoimentos</a>
+              <a href="#contact" className={`duration-500 btn-primary transition-colors ${isScrolled ? 'bg-bjj-blue text-white' : 'bg-transparent border-2 border-gracie-white text-gracie-white hover:bg-gracie-white hover:text-bjj-darkblue'}`}>Aula Gratuita</a>
+            </div>
           )}
 
           {/* Mobile menu button */}
