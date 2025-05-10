@@ -1,5 +1,5 @@
 import { Award, Shield, Users } from 'lucide-react';
-import NossaHistoria from '../../public/nossa-historia.png';
+import NossaHistoria from '/nossa-historia.png';
 
 const About = () => {
   return (
