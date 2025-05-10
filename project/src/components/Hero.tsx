@@ -30,7 +30,7 @@ const Hero = () => {
             <a href="#contact" className="btn-primary bg-bjj-blue text-white text-lg">
               Agende uma Aula Gratuita
             </a>
-            <a href="#programs" className="bg-transparent border-2 border-gracie-white text-gracie-white hover:bg-gracie-white hover:text-gracie-black transition-all px-6 py-3 rounded-md font-medium text-lg">
+            <a href="#programs" className="bg-transparent border-2 border-gracie-white text-gracie-white hover:bg-gracie-white hover:text-gracie-black transition-all px-6 py-3 rounded-md font-medium text-lg duration-500">
               Nossos Programas
             </a>
           </div>
