@@ -1,11 +1,11 @@
-🥋 GracieBjj - Projeto de Estudo com Foco em Jiu-Jitsu Brasileiro
+🥋 CleanBJJ - Projeto de Estudo com Foco em Jiu-Jitsu Brasileiro
 =================================================================
-👉 [Acesse o site aqui](https://graciebjj.vercel.app/)
+👉 [Acesse o site aqui](https://CleanBJJ.vercel.app/)
 
 📌 Descrição
 ------------
 
-**GracieBjj** é um projeto fictício de uma escola de Jiu-Jitsu Brasileiro, desenvolvido com o objetivo de colocar em prática tecnologias modernas do ecossistema front-end, ao mesmo tempo em que promove uma paixão pessoal: o Jiu-Jitsu.
+**CleanBJJ** é um projeto fictício de uma escola de Jiu-Jitsu Brasileiro, desenvolvido com o objetivo de colocar em prática tecnologias modernas do ecossistema front-end, ao mesmo tempo em que promove uma paixão pessoal: o Jiu-Jitsu.
 
 Este projeto foi concebido como um exercício prático para aplicar conhecimentos em desenvolvimento web, design responsivo e boas práticas de código. Ele simula o site de uma academia de Jiu-Jitsu, com informações sobre aulas, professores, horários e outros conteúdos típicos de uma escola real.
 

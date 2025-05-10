@@ -62,7 +62,7 @@ const About = () => {
           <div className="w-full md:w-1/2">
             <h3 className="text-2xl font-bold mb-4 text-bjj-blue">Nossa História</h3>
             <p className="text-gray-600 mb-6">
-              Fundada em 2010 pelo Mestre Lyoto Gracie, nossa academia nasceu do sonho de criar um espaço 
+              Fundada em 2010 pelo Mestre Lyoto, nossa academia nasceu do sonho de criar um espaço 
               onde o Jiu-Jitsu Brasileiro pudesse ser praticado em sua forma mais pura e autêntica.
             </p>
             <p className="text-gray-600 mb-6">

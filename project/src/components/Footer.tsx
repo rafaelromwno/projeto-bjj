@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Column 1: Logo and About */}
           <div>
             <h2 className="text-2xl font-bold mb-4">
-              <span className="text-bjj-red">GRACIE</span><span className="text-white">BJJ</span>
+              <span className="text-bjj-red">CLEAN</span><span className="text-white">BJJ</span>
             </h2>
             <p className="text-gray-300 mb-4">
               Academia premium de Jiu-Jitsu Brasileiro com ambiente familiar e 
@@ -97,17 +97,17 @@ const Footer = () => {
           {/* Column 4: Contact */}
           <div>
             <h3 className="text-lg font-bold mb-4">Contato</h3>
-            <address className="not-italic text-gray-300 space-y-2">
-              <p>Av. Paulista, 1000 - Bela Vista</p>
-              <p>São Paulo - SP, 01310-100</p>
-              <p>Telefone: (11) 99999-9999</p>
-              <p>Email: contato@graciebjj.com.br</p>
-            </address>
+          <address className="not-italic text-gray-300 space-y-2">
+            <p>Rua Exemplo, 123 - Centro</p>
+            <p>Cidade - Estado, 00000-000</p>
+            <p>Telefone: (11) 99999-9999</p>
+            <p>Email: contato@cleanbjj.com.br</p>
+          </address>
           </div>
         </div>
         
         <div className="py-6 border-t border-white/10 text-center text-gray-300 text-sm">
-          <p>© {currentYear} Gracie BJJ. Todos os direitos reservados.</p>
+          <p>© {currentYear} CleanBJJ. Todos os direitos reservados.</p>
           <p className="mt-2">Esta é uma academia fictícia criada apenas para demonstração.</p>
         </div>
       </div>

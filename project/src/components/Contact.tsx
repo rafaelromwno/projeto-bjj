@@ -92,7 +92,7 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="seu.email@exemplo.com"
+                    placeholder="lyoto@email.com"
                     required
                     className="w-full"
                   />
@@ -142,11 +142,11 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-start">
                 <MapPin className="mr-4 flex-shrink-0" />
-                <div>
-                  <h4 className="font-bold mb-1">Endereço</h4>
-                  <p>Av. Paulista, 1000 - Bela Vista</p>
-                  <p>São Paulo - SP, 01310-100</p>
-                </div>
+              <div>
+                <h4 className="font-bold mb-1">Endereço</h4>
+                <p>Rua Exemplo, 123 - Centro</p>
+                <p>Cidade - Estado, 00000-000</p>
+              </div>
               </div>
 
               <div className="flex items-start">
@@ -161,7 +161,7 @@ const Contact = () => {
                 <Mail className="mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-bold mb-1">Email</h4>
-                  <p>contato@graciebjj.com.br</p>
+                  <p>contato@cleanbjj.com.br</p>
                 </div>
               </div>
 
