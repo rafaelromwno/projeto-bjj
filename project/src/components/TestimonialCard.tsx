@@ -21,7 +21,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] 
         />
       </div>
       <div>
-        <h4 className="text-bjj-blue font-bold">{testimonial.name}</h4>
+        <p className="text-bjj-blue font-bold">{testimonial.name}</p>
         <p className="text-gray-500 text-sm">{testimonial.position}</p>
       </div>
     </div>
