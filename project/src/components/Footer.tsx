@@ -11,7 +11,13 @@ const Footer = () => {
 
           <div>
             <h2 className="text-2xl font-bold mb-4">
-              <span className="text-bjj-red">CLEAN</span><span className="text-white">BJJ</span>
+            <a href="#" className="flex items-center" aria-label="Página inicial">
+              <img 
+                src="/logotipo.svg" 
+                alt="Logo" 
+                className='h-10 transition-all duration-300 filter-white'
+              />
+            </a>
             </h2>
             <p className="text-gray-300 mb-4">
               Academia premium de Jiu-Jitsu Brasileiro com ambiente familiar e 

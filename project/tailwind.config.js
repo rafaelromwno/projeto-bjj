@@ -64,6 +64,7 @@ export default {
 				darkblue: '#062F4F',
 				lightblue: '#3A7CA5', 
 				red: '#C8102E',
+				redhero: '#FF002A',
 			},
 			sidebar: {
 				DEFAULT: 'hsl(var(--sidebar-background))',

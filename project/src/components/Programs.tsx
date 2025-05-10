@@ -1,40 +1,7 @@
 import { Button } from '@/components/ui/button';
-import FundamentalsProgram from '../../public/fundamentals-program.jpg';
-import KidsProgram from '../../public/kids-program.jpg';
-import CompetitionProgram from '../../public/competition-program.jpg';
-
-const programs = [
-  {
-    title: "Jiu-Jitsu Kids",
-    description: "Programa desenvolvido especialmente para crianças de 5 a 12 anos, focando em coordenação motora, disciplina, respeito e defesa pessoal de forma lúdica e segura.",
-    image: KidsProgram,
-    details: [
-      { label: "Idade", value: "5-12 anos" },
-      { label: "Duração", value: "45 minutos" },
-      { label: "Frequência", value: "2-3x por semana" },
-    ],
-  },
-  {
-    title: "Fundamentos",
-    description: "Curso completo para adultos iniciantes no Jiu-Jitsu, com foco em técnicas fundamentais, condicionamento físico e princípios básicos de defesa pessoal.",
-    image: FundamentalsProgram,
-    details: [
-      { label: "Idade", value: "13+ anos" },
-      { label: "Duração", value: "60 minutos" },
-      { label: "Frequência", value: "2-5x por semana" },
-    ],
-  },
-  {
-    title: "Avançado & Competição",
-    description: "Treinamento intensivo para faixas azuis e acima, preparação física e mental para competições de alto nível. Aulas dinâmicas focadas em desempenho técnico, estratégia de luta e resistência sob pressão.",
-    image: CompetitionProgram,
-    details: [
-      { label: "Nível", value: "Intermediário/Avançado" },
-      { label: "Duração", value: "90 minutos" },
-      { label: "Frequência", value: "3-6x por semana" },
-    ],
-  },
-];
+import { scrollToContact } from '@/utils/scrollToContact';
+import { programs } from '@/data/programs'; 
+import ProgramCard from './ProgramCard';
 
 const Programs = () => {
   return (
@@ -50,44 +17,7 @@ const Programs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md card-hover">
-              <div className="h-60 overflow-hidden">
-                <img
-                  src={program.image}
-                  alt={program.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-bjj-blue">{program.title}</h3>
-                <p className="text-gray-600 mb-4">{program.description}</p>
-                <div className="flex flex-col gap-3">
-                  {program.details.map((detail, idx) => (
-                    <div key={idx} className="flex justify-between">
-                      <span className="text-gray-700 font-medium">{detail.label}:</span>
-                      <span className="text-gray-600">{detail.value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="p-6 pt-0">
-                <a href="#contact" className="w-full inline-block">
-                  <Button 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const target = document.querySelector('#contact');
-                    if (target) {
-                      target.scrollIntoView({ behavior: 'smooth' });
-                      history.pushState(null, '', '#contact');
-                    }
-                  }}
-                  className="w-full bg-bjj-blue text-white hover:bg-bjj-blue/90"
-                  >
-                    Saiba Mais
-                  </Button>
-                </a>
-              </div>
-            </div>
+            <ProgramCard key={index} program={program} />
           ))}
         </div>
 
@@ -95,18 +25,12 @@ const Programs = () => {
           <p className="text-gray-700 mb-6">
             Além dos programas principais, também oferecemos aulas especializadas de No-Gi, Apenas mulheres (Women's Only) e Defesa Pessoal.
           </p>
-          <a href="#contact" className="inline-block">
-            <Button 
-            onClick={(e) => {
-              e.preventDefault();
-              const target = document.querySelector('#contact');
-              if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-                history.pushState(null, '', '#contact');
-              }
-            }}
-            className="btn-secondary bg-bjj-darkblue hover:bg-bjj-lightblue duration-500">Ver Horário Completo</Button>
-          </a>
+          <Button
+            onClick={scrollToContact}
+            className="btn-secondary bg-bjj-darkblue hover:bg-bjj-lightblue duration-500"
+          >
+            Ver Horário Completo
+          </Button>
         </div>
       </div>
     </section>
