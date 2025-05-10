@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-blue-900 text-white">
       <div className="container mx-auto px-4">
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Column 1: Logo and About */}
+
           <div>
             <h2 className="text-2xl font-bold mb-4">
               <span className="text-bjj-red">CLEAN</span><span className="text-white">BJJ</span>
@@ -30,9 +30,8 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Column 2: Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Links Rápidos</h3>
+            <h3 className="text-lg font-bold mb-4">Navegue</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="text-gray-300 hover:text-white transition-colors">
@@ -62,7 +61,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Column 3: Programs */}
           <div>
             <h3 className="text-lg font-bold mb-4">Programas</h3>
             <ul className="space-y-2">
@@ -94,7 +92,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Column 4: Contact */}
           <div>
             <h3 className="text-lg font-bold mb-4">Contato</h3>
           <address className="not-italic text-gray-300 space-y-2">
