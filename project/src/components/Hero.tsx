@@ -8,17 +8,14 @@ const Hero = () => {
   return (
     <>
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with overlay */}
         <div className="absolute inset-0 z-0">
           <div
             className="w-full h-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
           />
         </div>
 
-        {/* Red accent stripe */}
         <div className="absolute left-0 top-0 bottom-0 w-2 md:w-4 bg-gracie-red"></div>
 
-        {/* Content */}
         <div className="container mx-auto px-4 z-10 text-center">
           <div className="flex flex-col items-center mb-8 animate-fade-in">
 
@@ -48,9 +45,6 @@ const Hero = () => {
         </div>
       </section>
 
-      <section id="about" className="pt-20 md:pt-16">
-        {/* Conteúdo da seção "about" */}
-      </section>
     </>
   );
 };
