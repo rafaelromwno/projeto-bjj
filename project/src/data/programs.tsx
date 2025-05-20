@@ -5,7 +5,7 @@ import CompetitionProgram from "/competition-program.avif";
 export const programs = [
   {
     title: "Jiu-Jitsu Kids",
-    description: "Programa desenvolvido especialmente para crianças de 5 a 12 anos, focando em coordenação motora, disciplina, respeito e defesa pessoal de forma lúdica e segura.",
+    description: "Programa para crianças de 5 a 12 anos, focado em coordenação, disciplina, respeito e defesa pessoal de maneira lúdica e segura.",
     image: KidsProgram,
     details: [
       { label: "Idade", value: "5-12 anos" },
@@ -15,7 +15,7 @@ export const programs = [
   },
   {
     title: "Fundamentos",
-    description: "Curso completo para adultos iniciantes no Jiu-Jitsu, com foco em técnicas fundamentais, condicionamento físico e princípios básicos de defesa pessoal.",
+    description: "Curso para adultos iniciantes, com foco em técnicas essenciais, condicionamento físico e princípios de defesa pessoal.",
     image: FundamentalsProgram,
     details: [
       { label: "Idade", value: "13+ anos" },
@@ -25,7 +25,7 @@ export const programs = [
   },
   {
     title: "Avançado & Competição",
-    description: "Treinamento intensivo para faixas azuis e acima, preparação física e mental para competições de alto nível. Aulas dinâmicas focadas em desempenho técnico, estratégia de luta e resistência sob pressão.",
+    description: "Treinamento intensivo para faixas azuis e superiores, focado em técnica, estratégias de competição e resistência física e mental.",
     image: CompetitionProgram,
     details: [
       { label: "Nível", value: "Intermediário/Avançado" },
@@ -34,3 +34,4 @@ export const programs = [
     ],
   },
 ];
+ 
