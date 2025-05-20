@@ -11,7 +11,6 @@ const ProgramCard = React.memo(({ program }: { program: typeof programs[0] }) =>
         src={program.image}
         alt={`Imagem ilustrativa do programa ${program.title}`}
         className="w-full h-full object-cover"
-        loading="lazy"
       />
     </div>
 
