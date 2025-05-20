@@ -9,7 +9,7 @@ export const instructors = [
     description: "Com 25 anos de experiência, Mestre Marcus é formado pela linhagem direta dos fundadores do Jiu-Jitsu Brasileiro. 13x Campeão mundial e reconhecido por sua excelência técnica.",
     image: Buchecha,
     socialLinks: {
-      instagram: "#https://www.instagram.com/marcusbuchecha/",
+      instagram: "https://www.instagram.com/marcusbuchecha/",
     },
   },
   {
