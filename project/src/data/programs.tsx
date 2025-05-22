@@ -1,6 +1,6 @@
-import KidsProgram from "/kids-program.avif";
-import FundamentalsProgram from "/fundamentals-program.avif";
-import CompetitionProgram from "/competition-program.avif";
+import KidsProgram from "/kids-program.webp";
+import FundamentalsProgram from "/fundamentals-program.webp";
+import CompetitionProgram from "/competition-program.webp";
 
 export const programs = [
   {
