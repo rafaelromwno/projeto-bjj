@@ -1,6 +1,6 @@
-import Buchecha from "/buchecha.jpeg";
-import RafaelMendes from "/rafael-mendes-jiu-jitsu.jpg";
-import TainanDalpra from "/tainan-dalpra.jpeg";
+import Buchecha from "/buchecha.webp";
+import RafaelMendes from "/rafael-mendes-jiu-jitsu.webp";
+import TainanDalpra from "/tainan-dalpra.webp";
 
 export const instructors = [
   {
